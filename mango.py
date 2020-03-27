@@ -36,17 +36,119 @@ import types # modules contains a number of type name defns to test if variables
 # some new operators
 # // for integer division, ** for power
 
-print 2**5 # 2 power 5
+# print 2**5 # 2 power 5
+#
+# print 3.0 // 2.0 # returns the dividend without the remaninder section
+#
+# print 1/2 # is 0 in py2 but it is 0.5 in py3
+# print 1.0/2 # this returns 0.5 well
+#
+# # Boolean operatiors
+#
+# check = 2 > 3 and 3 > 2
+# print check
+# print not False
+# print True or False
+# print True and False
 
-print 3.0 // 2.0 # returns the dividend without the remaninder section
+# STRINGS
+# s = "Mukiibi Kelly Alvin"
+#
+# print type(s) # returns str
+#
+# print len(s)
+#
+# s2 = s.replace("Kelly", "Jace")
+#
+# print s
+# print s2
+#
+# # we can find a character in a str using [] as in index it as an array
+#
+# print s[5]
+#
+# print s[2:4] # extract a substring using indexes, returns 2,3 (4 is not returned)
+# print s[:8]
+# print s[4:]
 
-print 1/2 # is 0 in py2 but it is 0.5 in py3
-print 1.0/2 # this returns 0.5 well
+# LISTS
+# very similar to strings except that each element can be of any type
 
-# Boolean operatiors
+my_list = [1,4.2,"John", True]
 
-check = 2 > 3 and 3 > 2
-print check
-print not False
-print True or False
-print True and False
+print type(my_list) # list type
+
+print my_list[2]
+
+for item in my_list:
+    print item
+
+# we can generate lists using the range function
+
+list_2 = range(4, 20, 2) # from 4 to 20, skipping 2, 20 is not returned
+
+print list_2
+
+# in py3 u have to covert it to a list
+
+print list(list(list_2))
+
+my_str = "Kabaka"
+
+# get list from string
+
+print my_str
+print list(my_str)
+
+# adding modifying and removing elements from lists
+
+lis = []
+
+lis.append(5)
+lis.append(3)
+
+print lis
+
+lis[1] = 4
+
+print lis
+
+lis.insert(0, True)
+lis.insert(1, "Jack")
+
+print lis
+
+lis.remove(4)
+
+print lis
+
+del lis[2]
+
+print lis
+
+
+# lists are mutable, tuples are not
+
+# TUPLES
+
+point = (12, 40)
+point2 = 10, 20
+
+print point
+
+x, y = point2 # assigning each value to a variable using CSV format assigning
+
+print x
+
+
+# DICTIONARIES
+
+params = { "p1" : 9.0, "p2" : 2, "p3" : 3}
+
+print params['p1']
+
+params['p4'] = 4
+
+print params
+
+print("p1 is equal to " + str(params['p1']))
