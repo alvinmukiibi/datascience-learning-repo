@@ -177,30 +177,44 @@ params = { "p1" : 9.0, "p2" : 2, "p3" : 3}
 
 # FUNCTIONS
 
-def my_func():
-    """ To print a string, this is called a docstring, it must follow directly after the function definition """
-    print "This is a function"
-
-my_func()
-
-help(my_func) # prints the doc string
-
-def powers(x):
-    """ return a few powers of a number x"""
-    return x**2, x**3, x**4
-
-print(powers(4))
-
-x, y, z = powers(5)
-
-print y
+# def my_func():
+#     """ To print a string, this is called a docstring, it must follow directly after the function definition """
+#     print "This is a function"
+#
+# my_func()
+#
+# help(my_func) # prints the doc string
+#
+# def powers(x):
+#     """ return a few powers of a number x"""
+#     return x**2, x**3, x**4
+#
+# print(powers(4))
+#
+# x, y, z = powers(5)
+#
+# print y
 
 # UNNAMED FUNCTIONS
 
 # created using lambda keyword
 
-func_two = lambda y: y*7 # given an arg of y, return y by 7
+# func_two = lambda y: y*7 # given an arg of y, return y by 7
+#
+# print func_two(8)
 
-print func_two(8)
 
+class Point:
+    """ Sample class to represent a cartesian coordinate"""
 
+    def __init__(self, x, y):
+        """Create a new Point x, y"""
+        self.x = x
+        self.y = y
+
+    def __str__(self):
+        return "Point at [%d, %d]" % (self.x, self.y)
+
+p1 = Point(2,3)
+
+print p1
