@@ -186,7 +186,7 @@ params = { "p1" : 9.0, "p2" : 2, "p3" : 3}
 # help(my_func) # prints the doc string
 #
 # def powers(x):
-#     """ return a few powers of a number x"""
+#     """ return a few powers of a number x """
 #     return x**2, x**3, x**4
 #
 # print(powers(4))
