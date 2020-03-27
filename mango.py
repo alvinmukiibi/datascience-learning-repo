@@ -1,4 +1,4 @@
-print "Hello World"
+# print "Hello World"
 
 
 import math
@@ -155,22 +155,52 @@ params = { "p1" : 9.0, "p2" : 2, "p3" : 3}
 
 # CONTROL FLOW if, elif, else
 
-check = True
-
-if check:
-    print "its true"
-
+# check = True
+#
+# if check:
+#     print "its true"
+#
 # LOOPS
 
 
-for x in [2,3,4,5]:
-    print x
-
-for key, value in params.items():
-    print key + " = " + str(value)
+# for x in [2,3,4,5]:
+#     print x
+#
+# for key, value in params.items():
+#     print key + " = " + str(value)
 
 # creating lists using loops
 
-list1 = [x*2 for x in range(0,4)]
+# list1 = [x*2 for x in range(0,4)]
+#
+# print list1
 
-print list1
+# FUNCTIONS
+
+def my_func():
+    """ To print a string, this is called a docstring, it must follow directly after the function definition """
+    print "This is a function"
+
+my_func()
+
+help(my_func) # prints the doc string
+
+def powers(x):
+    """ return a few powers of a number x"""
+    return x**2, x**3, x**4
+
+print(powers(4))
+
+x, y, z = powers(5)
+
+print y
+
+# UNNAMED FUNCTIONS
+
+# created using lambda keyword
+
+func_two = lambda y: y*7 # given an arg of y, return y by 7
+
+print func_two(8)
+
+
