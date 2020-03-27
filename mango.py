@@ -74,81 +74,103 @@ import types # modules contains a number of type name defns to test if variables
 # LISTS
 # very similar to strings except that each element can be of any type
 
-my_list = [1,4.2,"John", True]
-
-print type(my_list) # list type
-
-print my_list[2]
-
-for item in my_list:
-    print item
+# my_list = [1,4.2,"John", True]
+#
+# print type(my_list) # list type
+#
+# print my_list[2]
+#
+# for item in my_list:
+#     print item
 
 # we can generate lists using the range function
 
-list_2 = range(4, 20, 2) # from 4 to 20, skipping 2, 20 is not returned
-
-print list_2
-
-# in py3 u have to covert it to a list
-
-print list(list(list_2))
-
-my_str = "Kabaka"
+# list_2 = range(4, 20, 2) # from 4 to 20, skipping 2, 20 is not returned
+#
+# print list_2
+#
+# # in py3 u have to covert it to a list
+#
+# print list(list(list_2))
+#
+# my_str = "Kabaka"
 
 # get list from string
 
-print my_str
-print list(my_str)
+# print my_str
+# print list(my_str)
 
 # adding modifying and removing elements from lists
 
-lis = []
-
-lis.append(5)
-lis.append(3)
-
-print lis
-
-lis[1] = 4
-
-print lis
-
-lis.insert(0, True)
-lis.insert(1, "Jack")
-
-print lis
-
-lis.remove(4)
-
-print lis
-
-del lis[2]
-
-print lis
+# lis = []
+#
+# lis.append(5)
+# lis.append(3)
+#
+# print lis
+#
+# lis[1] = 4
+#
+# print lis
+#
+# lis.insert(0, True)
+# lis.insert(1, "Jack")
+#
+# print lis
+#
+# lis.remove(4)
+#
+# print lis
+#
+# del lis[2]
+#
+# print lis
 
 
 # lists are mutable, tuples are not
 
 # TUPLES
 
-point = (12, 40)
-point2 = 10, 20
-
-print point
-
-x, y = point2 # assigning each value to a variable using CSV format assigning
-
-print x
+# point = (12, 40)
+# point2 = 10, 20
+#
+# print point
+#
+# x, y = point2 # assigning each value to a variable using CSV format assigning
+#
+# print x
 
 
 # DICTIONARIES
-
 params = { "p1" : 9.0, "p2" : 2, "p3" : 3}
+#
+# print params['p1']
+#
+# params['p4'] = 4
+#
+# print params
+#
+# print("p1 is equal to " + str(params['p1']))
 
-print params['p1']
 
-params['p4'] = 4
+# CONTROL FLOW if, elif, else
 
-print params
+check = True
 
-print("p1 is equal to " + str(params['p1']))
+if check:
+    print "its true"
+
+# LOOPS
+
+
+for x in [2,3,4,5]:
+    print x
+
+for key, value in params.items():
+    print key + " = " + str(value)
+
+# creating lists using loops
+
+list1 = [x*2 for x in range(0,4)]
+
+print list1
