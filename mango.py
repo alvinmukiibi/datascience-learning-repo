@@ -204,17 +204,26 @@ params = { "p1" : 9.0, "p2" : 2, "p3" : 3}
 # print func_two(8)
 
 
-class Point:
-    """ Sample class to represent a cartesian coordinate"""
 
-    def __init__(self, x, y):
-        """Create a new Point x, y"""
-        self.x = x
-        self.y = y
+# class Point:
+#     """ Sample class to represent a cartesian coordinate"""
+#
+#     def __init__(self, x, y):
+#         """Create a new Point x, y"""
+#         self.x = x
+#         self.y = y
+#
+#     def __str__(self):
+#         return "Point at [%d, %d]" % (self.x, self.y)
+#
+# p1 = Point(2,3)
+# print p1
 
-    def __str__(self):
-        return "Point at [%d, %d]" % (self.x, self.y)
+try:
+    print "This is a test"
+    print test
+except:
+    print "Caught an exception because variable is undeclared"
 
-p1 = Point(2,3)
 
-print p1
+
