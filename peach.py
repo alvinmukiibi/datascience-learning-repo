@@ -86,7 +86,7 @@ for i, document in enumerate(users):
 
 # zipping, make two lists into a single list of tuples
 
-list1 = ['a','b','c', 'd']
+list1 = ['a','b','c','d']
 list2 = [1,2,3]
 
 list3 = zip(list1, list2)
